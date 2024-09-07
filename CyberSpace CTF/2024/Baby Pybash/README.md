@@ -1,6 +1,8 @@
 # [CyberSpace CTF 2024 / beginner] Baby Pybash
 
 > I made a very secure bash terminal in Python. I don't think anyone can break in!
+>
+> [Attachment](./attachment)
 
 Shell script에서 `$0`은 현재 실행 중인 스크립트 파일의 경로를 의미한다.
 
