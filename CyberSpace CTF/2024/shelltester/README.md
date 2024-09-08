@@ -1,4 +1,4 @@
-# [CyberSpace CTF 2024 / pwnable] shelltester
+# [CyberSpace CTF 2024 / beginner] shelltester
 
 > Test your shellcode in my safe program!
 >
