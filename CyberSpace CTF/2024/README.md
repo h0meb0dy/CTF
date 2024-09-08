@@ -4,6 +4,7 @@
 
 - [Baby Pybash](./Baby%20Pybash)
 - [shelltester](./shelltester)
+- [ticket-bot](./ticket-bot)
 
 ## Pwnable
 
