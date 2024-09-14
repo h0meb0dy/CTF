@@ -3,6 +3,7 @@
 ## 2024
 
 - [CyberSpace CTF 2024](./CyberSpace%20CTF/2024)
+- [Urmia CTF 2024](./Urmia%20CTF/2024)
 
 ## 2019
 
