@@ -9,4 +9,4 @@
 ## Pwn
 
 - [no_handouts](./no_handouts)
-- [D.I.S.A.](./D.I.S.A.)
+- [D.I.S.A.](./D.I.S.A)
