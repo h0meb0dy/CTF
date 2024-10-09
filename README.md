@@ -3,8 +3,8 @@
 ## 2024
 
 - [BuckeyeCTF 2024](./BuckeyeCTF/2024) ([CTFtime](https://ctftime.org/event/2449))
-- [CyberSpace CTF 2024](./CyberSpace%20CTF/2024) ([CTFtime](https://ctftime.org/event/2460))
-- [Urmia CTF 2024](./Urmia%20CTF/2024) ([CTFtime](https://ctftime.org/event/2428))
+- [Urmia CTF 2024](./Urmia%20CTF/2024) ([CTFtime](https://ctftime.org/event/2460))
+- [CyberSpace CTF 2024](./CyberSpace%20CTF/2024) ([CTFtime](https://ctftime.org/event/2428))
 
 ## 2019
 
