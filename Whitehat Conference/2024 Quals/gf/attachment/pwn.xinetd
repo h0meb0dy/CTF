@@ -1,0 +1,12 @@
+service pwn
+{
+    disable = no
+    flags = REUSE
+    socket_type = stream
+    protocol = tcp
+    user = pwn
+    wait = no
+    server = /home/pwn/gf
+    type = UNLISTED
+    port = 1111
+}
