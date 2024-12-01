@@ -1,5 +1,5 @@
 diff --git a/src/bootstrapper.cc b/src/bootstrapper.cc
-index b027d36..ef1002f 100644
+index b027d36b5e9..ef1002fb3c9 100644
 --- a/src/bootstrapper.cc
 +++ b/src/bootstrapper.cc
 @@ -1668,6 +1668,8 @@ void Genesis::InitializeGlobal(Handle<JSGlobalObject> global_object,
@@ -12,7 +12,7 @@ index b027d36..ef1002f 100644
                            Builtins::kArrayPrototypeFind, 1, false);
      SimpleInstallFunction(isolate_, proto, "findIndex",
 diff --git a/src/builtins/builtins-array.cc b/src/builtins/builtins-array.cc
-index 8df340e..9b828ab 100644
+index 8df340ece7a..9b828ab4472 100644
 --- a/src/builtins/builtins-array.cc
 +++ b/src/builtins/builtins-array.cc
 @@ -361,6 +361,27 @@ V8_WARN_UNUSED_RESULT Object GenericArrayPush(Isolate* isolate,
@@ -44,7 +44,7 @@ index 8df340e..9b828ab 100644
  BUILTIN(ArrayPush) {
    HandleScope scope(isolate);
 diff --git a/src/builtins/builtins-definitions.h b/src/builtins/builtins-definitions.h
-index 0447230..f113a81 100644
+index 04472309fc0..f113a8179c5 100644
 --- a/src/builtins/builtins-definitions.h
 +++ b/src/builtins/builtins-definitions.h
 @@ -368,6 +368,7 @@ namespace internal {
@@ -56,7 +56,7 @@ index 0447230..f113a81 100644
    /* ArrayBuffer */                                                            \
    /* ES #sec-arraybuffer-constructor */                                        \
 diff --git a/src/compiler/typer.cc b/src/compiler/typer.cc
-index ed1e4a5..c199e3a 100644
+index ed1e4a5c6d8..c199e3a8086 100644
 --- a/src/compiler/typer.cc
 +++ b/src/compiler/typer.cc
 @@ -1680,6 +1680,8 @@ Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
