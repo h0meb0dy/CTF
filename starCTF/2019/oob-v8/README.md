@@ -103,7 +103,7 @@ OOB를 이용하여 임의의 array에서 elements의 바로 뒤쪽에 위치한
 
 ![image](https://github.com/user-attachments/assets/bcff069a-01ef-4a01-9bbd-a12bc32e01d0)
 
-Object array의 map을 float array의 map으로 덮어쓰면 object array에 저장된 object를 읽어올때 float 형태로 가져오게 된다. 이 원리로 임의의 object의 주소를 구하는 `addrof` primitive를 구현할 수 있다. 반대로, object array에 float을 저장하고 다시 원래의 map을 복구하면 그 float이 object의 주소가 된다. 이 원리로 임의의 주소에 fake object를 생성하는 `fakeobj` primitive를 구현할 수 있다.
+Object array의 map을 float array의 map으로 덮어쓰면 object array에 저장된 object를 읽어올때 float number로 가져오게 된다. 이 원리로 임의의 object의 주소를 구하는 `addrof` primitive를 구현할 수 있다. 반대로, object array에 float number를 저장하고 다시 원래의 map을 복구하면 그 float number가 object의 주소가 된다. 이 원리로 임의의 주소에 fake object를 생성하는 `fakeobj` primitive를 구현할 수 있다.
 
 ### AAR / AAW
 
@@ -117,13 +117,13 @@ Float array의 구조를 만들고 그 위치에 fake object를 생성하면 ele
 
 ### Execute shellcode
 
-WebAssembly instance를 생성하면 WebAssembly code를 실행하기 위해 RWX 권한을 가진 메모리가 할당된다.
+WebAssembly instance를 생성하면 WebAssembly code를 실행하기 위해 RWX permission을 가진 메모리가 할당된다.
 
 ![image](https://github.com/user-attachments/assets/ecdb3567-0670-4c01-998c-fc2d9c6a57da)
 
 ![image](https://github.com/user-attachments/assets/8be0dc12-7338-43b8-81a8-a226e8372ce1)
 
-이 영역에 저장된 코드를 shellcode로 덮어쓰고 WebAssembly instance의 exported function을 실행하면 shellcode를 실행할 수 있다.
+이 영역에 shellcode를 쓰고 WebAssembly instance의 exported function을 실행하면 shellcode를 실행할 수 있다.
 
 [pwn.js](./pwn.js)
 
